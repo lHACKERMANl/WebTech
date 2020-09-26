@@ -5,11 +5,13 @@ body {
     font-family: 'Roboto Slab', serif;
   }
 
-h1,h2,p,em,nav{
-    font-size: 30pt;
+h1,h2,p,q,nav,pre{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+h1{
+    font-size: 30pt;
 }
 
 h2{
@@ -26,12 +28,21 @@ a{
     padding-right: 20px;
     text-decoration: none;
 }
+pre{
+    font-size: 10pt;
+}
 
 li{
     list-style-type: none;
 }
 ul{
+    justify-content: center;
+    display: grid;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 5;
     padding-left: 5;
+}
+
+q{
+    font-size: 25pt;
 }
