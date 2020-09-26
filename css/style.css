@@ -1,0 +1,37 @@
+html,
+body {
+    min-width: 430px;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    font-family: 'Roboto Slab', serif;
+  }
+
+h1,h2,p,em,nav{
+    font-size: 30pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-size: 25pt;
+}
+
+p{
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    font-size: 15pt;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5;
+    padding-left: 5;
+}

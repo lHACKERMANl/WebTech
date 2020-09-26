@@ -23,6 +23,7 @@ body {
 body {
   min-width: 430px;
   border: 2px dashed #c7e4ff;
+  background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
 }
 
 html::before,
