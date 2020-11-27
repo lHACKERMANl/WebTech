@@ -51,4 +51,7 @@ alert(arr)
 
 //Phase4: Find tags
 
-alert($('a').length);
+$(document).ready(function(){
+    let count=  $("section").length;
+    alert(count)
+    });
