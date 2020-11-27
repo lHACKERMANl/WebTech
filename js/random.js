@@ -54,4 +54,4 @@ alert(arr)
 $(document).ready(function(){
     let count=  $("section").length;
     alert(count)
-    });
+});
