@@ -51,4 +51,4 @@ alert(arr)
 
 //Phase4: Find tags
 
-alert(document.getElementById('a').childNodes.length);
+alert($('a').length);
