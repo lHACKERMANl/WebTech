@@ -50,8 +50,4 @@ console.log(res);
 alert(arr)
 
 //Phase4: Find tags
-
-$(document).ready(function(){
-    let count=  $("section").length;
-    alert(count)
-});
+alert(document.getElementsByClassName("a").length);
