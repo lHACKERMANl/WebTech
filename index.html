@@ -8,13 +8,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css\style.css">
         <title>Anisin Vlad M33061</title>
+        <script src="js/random.js"></script>
     </head>
     <body>
+        <script>
+            let arr = new Array();
+            
+            for(let i=0; i<10000; i++){
+                arr.push(getRandomInt(100000));
+                console.log(arr);
+                alert(arr)
+            }
+        </script>
         <header>
             <nav style="margin-top: 15px;">
-                <a href="/">Главная страница </a>
-                <a href="#about">Обо мне </a>
-                <a href="#interesting">Факты обо мне</a>
+                <a id="a" href="/">Главная страница </a>
+                <a id="a" href="#about">Обо мне </a>
+                <a id="a" href="#interesting">Факты обо мне</a>
             </nav>
         </header>
         <main>
