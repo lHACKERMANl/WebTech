@@ -50,4 +50,4 @@ console.log(res);
 alert(arr)
 
 //Phase4: Find tags
-alert(document.getElementsByClassName("a").length);
+//alert(document.getElementsByClassName("a").length);
