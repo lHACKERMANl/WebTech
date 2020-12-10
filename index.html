@@ -7,8 +7,27 @@
         <meta name="author" content="Анисин Влад M33061" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\modal.css">
+        <link rel="stylesheet" href="css\gallerey.css">
         <title>Anisin Vlad M33061</title>
         <script src="js/random.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+</script>
+
     </head>
     <body>
         <header>
@@ -38,6 +57,36 @@
                             <dd>С мясом - 200р</dd>
                         </dl>
                       </ul>
+                </section>
+                <section>
+                    <h2>Photo lib</h2>
+                    <div class="gallery">
+                        <a target="_blank" href="https://images8.alphacoders.com/926/thumb-1920-926492.jpg">
+                          <img src="https://images8.alphacoders.com/926/thumb-1920-926492.jpg" alt="Cinque Terre" width="600" height="400">
+                        </a>
+                        <div class="desc">pic 1</div>
+                      </div>
+                      
+                      <div class="gallery">
+                        <a target="_blank" href="https://images8.alphacoders.com/926/thumb-1920-926492.jpg">
+                          <img src="https://lh3.googleusercontent.com/proxy/KnFwmRcffqZFUoZ9rORdM5IyOjWwawuVttZvDw9-HEGMrKMhLljk6Z7_1WrkAz9tQ1izPYdR_qv1dInxaJDMalwKC5HGgNijC72FaxcipcmdB2d44xqH5LZki140RG6gDNQj870t2Qk" alt="Forest" width="600" height="400">
+                        </a>
+                        <div class="desc">pic 2</div>
+                      </div>
+                      
+                      <div class="gallery">
+                        <a target="_blank" href="https://images8.alphacoders.com/926/thumb-1920-926492.jpg">
+                          <img src="https://images8.alphacoders.com/926/thumb-1920-926492.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">pic 3</div>
+                      </div>
+                      
+                      <div class="gallery">
+                        <a target="_blank" href="https://images8.alphacoders.com/926/thumb-1920-926492.jpg">
+                          <img src="https://lh3.googleusercontent.com/proxy/KnFwmRcffqZFUoZ9rORdM5IyOjWwawuVttZvDw9-HEGMrKMhLljk6Z7_1WrkAz9tQ1izPYdR_qv1dInxaJDMalwKC5HGgNijC72FaxcipcmdB2d44xqH5LZki140RG6gDNQj870t2Qk" alt="Mountains" width="600" height="400">
+                        </a>
+                        <div class="desc">pic 4</div>
+                      </div>
                 </section>
                 <section>
                     <h2>Тотемное животное</h2>
@@ -77,13 +126,19 @@
                 </section>
             </article>
         </main>
-        <footer class="emClass">
-            <h3>My mail</h3>
-            <em>mail@mail.ru</em>
-        </footer>
-        <script type="text/javascript">
-            alert(document.getElementsByClassName("a").length);
-        </script>
+        <h2>Modal Example</h2>
+
+        <div class="b-container">
+            <a href="javascript:PopUpShow()">Show info</a>
+        </div>
+        <div class="b-popup" id="popup1">
+            <div class="b-popup-content">
+                <p>mail@mail.ru
+                    <br>80122221122
+                </p>
+            <a href="javascript:PopUpHide()">Hide info</a>
+            </div>
+        </div>
     </body>
 </html>
 

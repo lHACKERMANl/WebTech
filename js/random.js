@@ -2,7 +2,7 @@
 let arr = new Array();
 
 function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
+    return Math.floor(Math.random() * (max + max) - max);
   }
 
 for(let i=0; i<10; i++){
@@ -35,6 +35,7 @@ function quickSort(array, left, right) {
 			k--;
 		}
 	}
+	console.log(tmp)
 	if (left < k) {
 		quickSort(array, left, k);
 		
@@ -50,4 +51,4 @@ console.log(res);
 alert(arr)
 
 //Phase4: Find tags
-alert(document.getElementsByClassName("a").length);
+//alert(document.getElementsByClassName("a").length);
